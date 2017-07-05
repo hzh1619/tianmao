@@ -340,7 +340,8 @@
 	font-size: 12px;
 	position: relative;
 	border-bottom: 1px solid #E5E5E5;
-	background:url("../img/head.png");
+	background:url("../img/head.png") no-repeat;
+	background-size: cover;
 	z-index: 230;
 }
 .head .left{
@@ -867,12 +868,11 @@ text-decoration: underline;
 
 
 .search{
-	width: 100%;
+	width: 1350px;
 	height: 130px;
 	/* background: red;
  */	box-sizing: border-box;
-	padding-left: 0px;
-	margin: 0 auto;
+	margin:auto;
 	padding-top: 15px;
 	left:55px;
 	top:2px;
@@ -880,8 +880,9 @@ text-decoration: underline;
 	z-index: 50;
 }
 .search img{
-	margin-top: -15px;
-	display: block;
+	position: absolute;
+	top:-2px;
+	left:0;
 	float: left;
 }
 .search-input{
@@ -922,7 +923,6 @@ text-decoration: underline;
 .search-input a{
 	color: #999999;
 	font-size: 16px;
-	line-height: 100px;
 	padding: 0px 14px;
 	line-height: 40px;
 	z-index: 50;
